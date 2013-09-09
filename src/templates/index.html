@@ -1,6 +1,6 @@
-<!--  <%
+<%
   var settings = require("ep_etherpad-lite/node/utils/Settings");
-%> -->
+%>
 <!doctype html>
 <html>
 
@@ -34,15 +34,15 @@
         <link rel="shortcut icon" href="<%=settings.favicon%>">
 
         <link rel="localizations" type="application/l10n+json" href="locales.json">
-        <!-- 
+
         <script type="text/javascript" src="../static/js/html10n.js"></script>
         <script type="text/javascript" src="../static/js/l10n.js"></script>
-          -->
+
         <link href="../static/custom/index.css" rel="stylesheet"> 
  
         <div id="top-header"></div>
         <div id="bottom-header"></div>
-        <!--  <% e.begin_block("indexWrapper"); %> -->
+        <% e.begin_block("indexWrapper"); %>
         <div id="wrapper">
             <div id="inner">
                 <div id="button" onclick="go2Random()" data-l10n-id="index.newPad"></div>
@@ -52,7 +52,7 @@
                     <button class="submit-button" type="submit">OK</button>
                 </form>
             </div>
-        <!--  <% e.end_block(); %> -->
+        <% e.end_block(); %>
         </div>
         <!-- 
         <script src="static/custom/index.js"></script>
