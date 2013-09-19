@@ -251,7 +251,8 @@ var padeditbar = (function()
       }
       else
       {
-        var padurl = window.location.href.split("?")[0];
+        //var padurl = window.location.href.split("?")[0];
+    	var padurl = "https://padup.uni-potsdam.de/index.php?name=" + clientVars.Id;	
         $('#embedinput').val("<iframe name='embed_readwrite' src='" + padurl + "?showControls=true&showChat=true&showLineNumbers=true&useMonospaceFont=false' width=600 height=400></iframe>");
         $('#linkinput').val(padurl);
       }
