@@ -244,16 +244,17 @@ var padeditbar = (function()
     {
       if ($('#readonlyinput').is(':checked'))
       {
-        //var basePath = document.location.href.substring(0, document.location.href.indexOf("/p/"));
+        var basePath = document.location.href.substring(0, document.location.href.indexOf("/p/"));
         var readonlyLink = "https://padup.uni-potsdam.de/index.php?name=" + clientVars.readOnlyId;
-        $('#embedinput').val("<iframe name='embed_readonly' src='" + readonlyLink + "?showControls=true&showChat=true&showLineNumbers=true&useMonospaceFont=false' width=600 height=400></iframe>");
+        var iframe_readonlylink = $basePath + "/p/" + clientVars.readOnlyId;
+        $('#embedinput').val("<iframe name='embed_readonly' src='" + iframe_readonlylink + "?showControls=true&showChat=true&showLineNumbers=true&useMonospaceFont=false' width=600 height=400></iframe>");
         $('#linkinput').val(readonlyLink);
       }
       else
       {
-        //var padurl = window.location.href.split("?")[0];
+        var iframe_padurl = window.location.href.split("?")[0];
     	var padurl = "https://padup.uni-potsdam.de/index.php?name=" + clientVars.Id;	
-        $('#embedinput').val("<iframe name='embed_readwrite' src='" + padurl + "?showControls=true&showChat=true&showLineNumbers=true&useMonospaceFont=false' width=600 height=400></iframe>");
+        $('#embedinput').val("<iframe name='embed_readwrite' src='" + iframe_padurl + "?showControls=true&showChat=true&showLineNumbers=true&useMonospaceFont=false' width=600 height=400></iframe>");
         $('#linkinput').val(padurl);
       }
     }
