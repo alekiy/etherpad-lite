@@ -246,7 +246,7 @@ var padeditbar = (function()
       {
         var basePath = document.location.href.substring(0, document.location.href.indexOf("/p/"));
         var readonlyLink = "https://padup.uni-potsdam.de/index.php?name=" + clientVars.readOnlyId;
-        var iframe_readonlylink = $basePath + "/p/" + clientVars.readOnlyId;
+        var iframe_readonlylink = basePath + "/p/" + clientVars.readOnlyId;
         $('#embedinput').val("<iframe name='embed_readonly' src='" + iframe_readonlylink + "?showControls=true&showChat=true&showLineNumbers=true&useMonospaceFont=false' width=600 height=400></iframe>");
         $('#linkinput').val(readonlyLink);
       }
