@@ -253,7 +253,7 @@ var padeditbar = (function()
       else
       {
         var iframe_padurl = window.location.href.split("?")[0];
-    	var padurl = "https://padup.uni-potsdam.de/index.php?name=" + document.location.href.substring(1, document.location.href.indexOf("/p/"))	
+    	var padurl = "https://padup.uni-potsdam.de/index.php?name=" + document.location.href.substring(0, iframe_padurl.indexOf("/p/"))	
         $('#embedinput').val("<iframe name='embed_readwrite' src='" + iframe_padurl + "?showControls=true&showChat=true&showLineNumbers=true&useMonospaceFont=false' width=600 height=400></iframe>");
         $('#linkinput').val(padurl);
       }
