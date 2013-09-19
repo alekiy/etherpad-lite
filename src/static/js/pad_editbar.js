@@ -244,8 +244,8 @@ var padeditbar = (function()
     {
       if ($('#readonlyinput').is(':checked'))
       {
-        var basePath = document.location.href.substring(0, document.location.href.indexOf("/p/"));
-        var readonlyLink = basePath + "/p/" + clientVars.readOnlyId;
+        //var basePath = document.location.href.substring(0, document.location.href.indexOf("/p/"));
+        var readonlyLink = "https://padup.uni-potsdam.de/index.php?name=" + clientVars.readOnlyId;
         $('#embedinput').val("<iframe name='embed_readonly' src='" + readonlyLink + "?showControls=true&showChat=true&showLineNumbers=true&useMonospaceFont=false' width=600 height=400></iframe>");
         $('#linkinput').val(readonlyLink);
       }
