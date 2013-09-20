@@ -76,7 +76,7 @@
     "pad.modals.disconnected": "Verbindung unterbrochen.",
     "pad.modals.disconnected.explanation": "Die Verbindung zum Pad-Server wurde unterbrochen.",
     "pad.modals.disconnected.cause": "M\u00f6glicherweise ist der Pad-Server nicht erreichbar. Bitte benachrichtigen Sie uns, falls dies weiterhin passiert.",
-    "pad.share": "Dieses Pad anderen mitteilen",
+    "pad.share": "Dieses Pad mit anderen teilen.",
     "pad.share.readonly": "Eingeschr\u00e4nkter Nur-Lese-Zugriff",
     "pad.share.link": "Link",
     "pad.share.emebdcode": "In Webseite einbetten",
