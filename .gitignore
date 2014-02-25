@@ -15,3 +15,5 @@ npm-debug.log
 .ep_initialized
 *.crt
 *.key
+*.svn
+.project
